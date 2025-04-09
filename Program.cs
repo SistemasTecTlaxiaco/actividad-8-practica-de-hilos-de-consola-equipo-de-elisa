@@ -5,7 +5,7 @@ class Program
 {
     static void Main()
     {
-        Console.WriteLine("Simulación de puertas del Metro CDMX...\n");
+        Console.WriteLine("Simulación de puertas del Metro CDMX...\n");//vghcvghncacv
 
         // Crear hilos para dos puertas
         Thread puertaDelantera = new Thread(() => SimularPuerta("Delantera"));
