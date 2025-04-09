@@ -41,3 +41,4 @@ class Program
         Console.WriteLine($"[{nombrePuerta}] Terminó el ciclo de simulación.\n");
     }
 }
+//gjgjg
