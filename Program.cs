@@ -20,7 +20,7 @@ class Program
         Console.ReadKey();
     }
 
-    static void SimularPuerta(string nombrePuerta)//
+    static void SimularPuerta(string nombrePuerta)//omkjn
     {
         for (int i = 1; i <= 5; i++) // 5 ciclos de abrir/cerrar// crear un for
         {
