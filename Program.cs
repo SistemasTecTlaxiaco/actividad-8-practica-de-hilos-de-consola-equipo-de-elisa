@@ -5,15 +5,14 @@ class Program
 {
     static void Main()
     {
-        Console.WriteLine("Simulación de puertas del Metro CDMX...\n");//vghcvghncacv
+        Console.WriteLine("Simulación de puertas del Metro CDMX...\n");
 
         // Crear hilos para dos puertas del metro 
         Thread puertaDelantera = new Thread(() => SimularPuerta("Delantera"));
         Thread puertaTrasera = new Thread(() => SimularPuerta("Trasera"));
 
-        puertaDelantera.Start();
+        puertaDelantera.Start();//
         puertaTrasera.Start();
-
         puertaDelantera.Join();
         puertaTrasera.Join();
 
@@ -21,7 +20,7 @@ class Program
         Console.ReadKey();
     }
 
-    static void SimularPuerta(string nombrePuerta)
+    static void SimularPuerta(string nombrePuerta)//
     {
         for (int i = 1; i <= 5; i++) // 5 ciclos de abrir/cerrar
         {
@@ -41,5 +40,3 @@ class Program
         Console.WriteLine($"[{nombrePuerta}] Terminó el ciclo de simulación.\n");
     }
 }
-//gjgjg
-//hola aqui estoy
