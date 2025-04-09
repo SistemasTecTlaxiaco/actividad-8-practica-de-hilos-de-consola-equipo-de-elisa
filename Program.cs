@@ -11,7 +11,7 @@ class Program
         Thread puertaDelantera = new Thread(() => SimularPuerta("Delantera"));
         Thread puertaTrasera = new Thread(() => SimularPuerta("Trasera"));
 
-        puertaDelantera.Start();//
+        puertaDelantera.Start();
         puertaTrasera.Start();
         puertaDelantera.Join();
         puertaTrasera.Join();
@@ -22,7 +22,7 @@ class Program
 
     static void SimularPuerta(string nombrePuerta)//
     {
-        for (int i = 1; i <= 5; i++) // 5 ciclos de abrir/cerrar
+        for (int i = 1; i <= 5; i++) // 5 ciclos de abrir/cerrar// crear un for
         {
             Console.WriteLine($"[{nombrePuerta}] Ciclo {i}: Abriendo puerta...");
             Thread.Sleep(1000); // 1 segundo simulando apertura
